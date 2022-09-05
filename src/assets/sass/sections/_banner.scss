@@ -1,0 +1,59 @@
+// Banner Section
+.banner-section {
+	padding: 200px 0;
+	@include breakpoint(max-xxl) {
+		padding: 150px 0;
+	}
+	@include breakpoint(max-xl) {
+		padding: 120px 0;
+	}
+	@include breakpoint(max-lg) {
+		padding: 100px 0;
+	}
+	@include breakpoint(max-xs) {
+		padding: 70px 0;
+	}
+}
+.banner-content {
+	max-width: 630px;
+	@include breakpoint(max-xxl) {
+		max-width: 580px;
+	}
+	@include breakpoint(max-md) {
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+	}
+	&__subtitle {
+		font-size: 30px;
+		color: hsl(var(--base-700));
+        @include breakpoint(max-xl) {
+			font-size: 26px;
+		}
+        @include breakpoint(max-lg) {
+			font-size: 24px;
+		}
+	}
+	&__title {
+		color: hsl(var(--base-700));
+		font-weight: 800;
+		
+	}
+	&__text {
+		font-size: 22px;
+		margin-top: 25px;
+		max-width: 550px;
+		@include breakpoint(max-xl) {
+			font-size: 20px;
+            max-width: 500px;
+		}
+		@include breakpoint(max-lg) {
+			font-size: 18px;
+            max-width: 450px;
+		}
+		@include breakpoint(max-md) {
+			margin-inline: auto;
+		}
+	}
+}
+// Banner Section
