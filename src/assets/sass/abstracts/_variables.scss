@@ -43,7 +43,7 @@
 	// Light Color Shade
 	--light-h: 128;
 	--light-s: 15%;
-	--light-l: 95%;
+	--light-l: 96%;
 	--light: var(--light-h) var(--light-s) var(--light-l);
 	--light-50: var(--light-h) var(--light-s) calc(var(--light-l) + 33%);
 	--light-100: var(--light-h) var(--light-s) calc(var(--light-l) + 20%);

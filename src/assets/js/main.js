@@ -46,7 +46,7 @@ window.addEventListener("resize", function (e) {
 });
 
 // Sticky Menu
-var header = document.querySelector(".header");
+var header = document.querySelector(".header-bottom");
 if (header) {
 	window.addEventListener("scroll", function () {
 		header.classList.toggle("sticky", window.scrollY > 0);
@@ -75,9 +75,9 @@ $(".scrollToTop").on("click", function () {
 });
 
 // Slider Part
-$(".brand-slider").slick({
+$(".testimonial-slider").slick({
 	fade: false,
-	slidesToShow: 6,
+	slidesToShow: 3,
 	slidesToScroll: 1,
 	infinite: true,
 	autoplay: true,
@@ -91,25 +91,65 @@ $(".brand-slider").slick({
 		{
 			breakpoint: 1199,
 			settings: {
-				slidesToShow: 5,
+				slidesToShow: 3,
 			},
 		},
 		{
 			breakpoint: 992,
 			settings: {
-				slidesToShow: 5,
+				slidesToShow: 2,
 			},
 		},
 		{
 			breakpoint: 767,
 			settings: {
-				slidesToShow: 4,
+				slidesToShow: 1,
 			},
 		},
 		{
 			breakpoint: 575,
 			settings: {
+				slidesToShow: 1,
+			},
+		},
+	],
+});
+// Slider Part
+$(".brands-slider").slick({
+	fade: false,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	infinite: true,
+	autoplay: true,
+	pauseOnHover: true,
+	centerMode: false,
+	dots: false,
+	arrows: false,
+	nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+	prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+	responsive: [
+		{
+			breakpoint: 1199,
+			settings: {
+				slidesToShow: 4,
+			},
+		},
+		{
+			breakpoint: 992,
+			settings: {
 				slidesToShow: 3,
+			},
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 3,
+			},
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 2,
 			},
 		},
 	],
