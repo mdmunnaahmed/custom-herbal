@@ -159,6 +159,9 @@ h1 {
 }
 h2 {
 	font-size: 36px;
+	@include breakpoint(max-lg) {
+		font-size: 30px;
+	}
 	@include breakpoint(max-md) {
 		font-size: 26px;
 	}

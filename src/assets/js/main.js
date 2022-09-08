@@ -154,7 +154,60 @@ $(".brands-slider").slick({
 		},
 	],
 });
-
+$(".banner-slider").slick({
+	fade: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	infinite: true,
+	autoplay: true,
+	speed: 400,
+	pauseOnHover: true,
+	dots: false,
+	arrows: true,
+	nextArrow: '<i class="fas fa-angle-right slick-arrow arrow-right"></i>',
+	prevArrow: '<i class="fas fa-angle-left slick-arrow arrow-left"></i> ',
+})
+if (parseInt(screenSize) > parseInt(991)) {
+	$(".timeline-wrapper").slick({
+		fade: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		infinite: true,
+		autoplay: true,
+		pauseOnHover: true,
+		centerMode: false,
+		dots: false,
+		arrows: false,
+		nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+		prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+		responsive: [
+			{
+				breakpoint: 1199,
+				settings: {
+					slidesToShow: 4,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+		],
+	});
+}
 // Odometer Counter
 let counter = $(".counter-item");
 if (counter) {

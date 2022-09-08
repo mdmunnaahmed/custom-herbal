@@ -36,6 +36,7 @@ $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "succ
 		color: hsl(var(--white));
 		&:hover {
 			color: $color;
+			border: 2px solid $color;
 		}
 	}
 }
