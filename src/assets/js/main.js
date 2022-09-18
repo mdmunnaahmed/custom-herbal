@@ -208,6 +208,64 @@ if (parseInt(screenSize) > parseInt(991)) {
 		],
 	});
 }
+
+// Product Slider
+$(".thumb-slider-one").slick({
+	fade: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	infinite: true,
+	autoplay: false,
+	pauseOnHover: true,
+	centerMode: false,
+	dots: false,
+	arrows: false,
+	nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+	prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+	asNavFor: ".thumb-slider-two",
+});
+$(".thumb-slider-two").slick({
+	fade: false,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	infinite: true,
+	autoplay: false,
+	pauseOnHover: true,
+	centerMode: true,
+	dots: false,
+	arrows: true,
+	nextArrow: '<i class="fas fa-angle-right slick-arrow arrow-right"></i>',
+	prevArrow: '<i class="fas fa-angle-left slick-arrow arrow-left"></i> ',
+	asNavFor: ".thumb-slider-one",
+	focusOnSelect: true,
+	responsive: [
+		{
+			breakpoint: 1199,
+			settings: {
+				slidesToShow: 3,
+			},
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 5,
+			},
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 3,
+			},
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 2,
+			},
+		},
+	],
+});
+
 // Odometer Counter
 let counter = $(".counter-item");
 if (counter) {
@@ -253,4 +311,39 @@ $(".menu li a").each(function () {
 	if ($(this).attr("href").indexOf(current) !== -1 && current != "") {
 		$(this).addClass("active");
 	}
+});
+
+
+// Sidebar Js
+$('.sidebar-toggler').on('click', function () {
+	$('.product-sidebar').toggleClass('active')
+})
+$('.sidebar-close').on('click', function () {
+	$('.product-sidebar').removeClass('active')
+})
+
+
+// Dash Sidebar Js
+$('.dashsidebar-toggler').on('click', function () {
+	$('.dashboard-left-sidebar').toggleClass('active')
+})
+$('.sidebar-close').on('click', function () {
+	$('.dashboard-left-sidebar').removeClass('active')
+})
+
+$(".qtybutton").on("click", function () {
+	var $button = $(this);
+	$button.parent().find('.qtybutton').removeClass('active')
+	$button.addClass('active');
+	var oldValue = $button.parent().find("input").val();
+	if ($button.hasClass('inc')) {
+		var newVal = parseFloat(oldValue) + 01;
+	} else {
+		if (oldValue > 1) {
+			var newVal = parseFloat(oldValue) - 01;
+		} else {
+			newVal = 01;
+		}
+	}
+	$button.parent().find("input").val(newVal);
 });

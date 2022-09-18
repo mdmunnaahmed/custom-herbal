@@ -91,6 +91,13 @@
 		}
 	}
 	@include breakpoint(md) {
+		thead {
+			tr {
+				th {
+					border: 0;
+				}
+			}
+		}
 		tbody {
 			tr {
 				td {

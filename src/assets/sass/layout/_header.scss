@@ -13,6 +13,7 @@
 	@extend %transition;
 	background-color: hsl(var(--white));
 	padding: 10px 0;
+	box-shadow: 0 1px 5px hsl(var(--dark) / 0.05);
 	&.sticky {
 		box-shadow: 0 3px 15px hsl(var(--dark) / 0.1);
 	}

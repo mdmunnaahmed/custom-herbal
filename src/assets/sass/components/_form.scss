@@ -1,5 +1,5 @@
 .form-label {
-	font-size: 15px;
+	font-weight: 500;
 }
 .form--control {
 	height: 50px;
@@ -7,8 +7,13 @@
 	border: 1px solid hsl(var(--border));
 	outline: 0 !important;
 	box-shadow: none !important;
+	color: hsl(var(--body));
 	&:focus {
 		border: 1px solid hsl(var(--base));
+	}
+	&::-webkit-input-placeholder {
+		font-size: 14px;
+		color: #9a9a9a;
 	}
 }
 .form--control[readonly] {
@@ -77,6 +82,53 @@ input:-webkit-autofill:focus {
 			background-color: hsl(var(--base)) !important;
 			opacity: 0;
 			border-radius: 50%;
+		}
+	}
+}
+
+.custom--checkbox {
+	position: relative;
+	padding-left: 0;
+	label {
+		margin-bottom: 0;
+		position: relative;
+		padding-left: 25px;
+		font-size: 14px;
+		cursor: pointer;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 4px;
+			left: 0;
+			width: 15px;
+			height: 15px;
+			border: 1px solid #999;
+		}
+		&::after {
+			position: absolute;
+			content: "\f00c";
+			@extend %font-ico;
+			top: -2px;
+			left: 2px;
+			opacity: 0;
+			color: hsl(var(--base));
+		}
+	}
+	input {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		cursor: pointer;
+		&:checked ~ label {
+			&::before {
+				border-width: 1px;
+				border-color: hsl(var(--base));
+			}
+			&::after {
+				opacity: 1;
+			}
 		}
 	}
 }

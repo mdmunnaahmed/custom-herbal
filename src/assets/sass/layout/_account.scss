@@ -1,0 +1,43 @@
+.modal {
+	transform: scale(0.85);
+	transition: .4s;
+}
+.modal.show {
+	transform: scale(1);
+}
+
+.account-form {
+	.form-group {
+		position: relative;
+	}
+	.form-label {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 90%;
+		left: 15px;
+		pointer-events: none;
+		transform-origin: 0 0;
+		transition: all 0.2s ease-out;
+        font-size: 15px;
+	}
+	.form-control:valid ~ .form-label,
+	.form-control:focus ~ .form-label {
+		transform: translateY(-50%) scale(0.85);
+		top: 0;
+		background-color: hsl(var(--white));
+		padding-inline: 10px;
+	}
+}
+
+.modal-close {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border-radius: 50%;
+	border: 1px solid hsl(var(--border));
+	@extend %flex-center;
+	line-height: 1;
+}

@@ -1,0 +1,649 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header.html')
+
+<section class="dashboard-section user-dashboard-section pt-80 pb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-3 col-lg-4">
+                <div class="dashboard-left-sidebar">
+                    <div class="close-button d-flex d-lg-none">
+                        <button class="close-sidebar sidebar-close"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="profile-box">
+                        <div class="cover-image">
+                            <img src="assets/images/thumb/tes1.jpg" class="img-fluid blur-up lazyloaded" alt="thumb">
+                        </div>
+
+                        <div class="profile-contain">
+                            <div class="profile-image">
+                                <div class="position-relative">
+                                    <img src="assets/images/thumb/tes1.jpg" class="blur-up update_img lazyloaded" alt="thumb">
+                                    <div class="cover-icon">
+                                        <i class="fas fa-solid fa-pen fs--13px"><input type="file"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-name">
+                                <h5>Vicki E. Pope</h5>
+                                <span class="text-content">vicki.pope@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#pills-dashboard" type="button" role="tab" aria-controls="pills-dashboard" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                DashBoard</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-order-tab" data-bs-toggle="pill" data-bs-target="#pills-order" type="button" role="tab" aria-controls="pills-order" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>Order</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-wishlist-tab" data-bs-toggle="pill" data-bs-target="#pills-wishlist" type="button" role="tab" aria-controls="pills-wishlist" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                                Wishlist</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-card-tab" data-bs-toggle="pill" data-bs-target="#pills-card" type="button" role="tab" aria-controls="pills-card" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                                </svg> Saved Card</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-address-tab" data-bs-toggle="pill" data-bs-target="#pills-address" type="button" role="tab" aria-controls="pills-address" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Address</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                Profile</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill" data-bs-target="#pills-security" type="button" role="tab" aria-controls="pills-security" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                Privacy</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xxl-9 col-lg-8">
+                <div class="text-end mb-4 d-lg-none">
+                    <span class="fw-bold dashsidebar-toggler"><i class="fas fa-bars me-2"></i> Dashboard Menu</span>
+                </div>
+                <div class="dashboard-right-sidebar">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel" aria-labelledby="pills-dashboard-tab">
+                            <div class="dashboard-home">
+                                <h3 class="mb-3 mb-sm-4">My Dashboard</h3>
+                                <div class="dashboard-user-name">
+                                    <h6 class="text-content">Hello, <b class="text-title">Vicki E. Pope</b></h6>
+                                    <p class="text-content">From your My Account Dashboard you have the ability to
+                                        view a snapshot of your recent account activity and update your account
+                                        information. Select a link below to view or edit information.</p>
+                                </div>
+
+                                <div class="total-box">
+                                    <div class="row g-sm-4 g-3">
+                                        <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                            <div class="totle-contain">
+                                                <img src="assets/images/icon/order.svg" class="img-1 blur-up lazyloaded" alt="thumb">
+                                                <img src="assets/images/icon/order.svg" class="blur-up lazyloaded" alt="thumb">
+                                                <div class="totle-detail">
+                                                    <h5>Total Order</h5>
+                                                    <h3>3658</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                            <div class="totle-contain">
+                                                <img src="assets/images/icon/pending.svg" class="img-1 blur-up lazyloaded" alt="thumb">
+                                                <img src="assets/images/icon/pending.svg" class="blur-up lazyloaded" alt="thumb">
+                                                <div class="totle-detail">
+                                                    <h5>Total Pending Order</h5>
+                                                    <h3>254</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                            <div class="totle-contain">
+                                                <img src="assets/images/icon/wishlist.svg" class="img-1 blur-up lazyloaded" alt="thumb">
+                                                <img src="assets/images/icon/wishlist.svg" class="blur-up lazyloaded" alt="thumb">
+                                                <div class="totle-detail">
+                                                    <h5>Total Wishlist</h5>
+                                                    <h3>32158</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-xxl-6">
+                                        <div class="dashboard-contant-title">
+                                            <h4>Contact Information <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a></h4>
+                                        </div>
+                                        <div class="dashboard-detail">
+                                            <p class="text-content">vicki.pope@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-6">
+                                        <div class="dashboard-contant-title">
+                                            <h4>Newsletters <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a></h4>
+                                        </div>
+                                        <div class="dashboard-detail">
+                                            <h6 class="text-content">You are currently not subscribed to any
+                                                newsletter</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="dashboard-contant-title">
+                                            <h4>Address Book</h4>
+                                        </div>
+
+                                        <div class="row g-4">
+                                            <div class="col-xxl-6">
+                                                <div class="dashboard-detail">
+                                                    <h6 class="text-content">Default Billing Address</h6>
+                                                    <p class="text-content mb-1">Uttara-12, Dhaka-1230</p>
+                                                    <a href="javascript:void(0)" class="text--base" data-bs-toggle="modal" data-bs-target="#editProfile">Edit Address</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xxl-6">
+                                                <div class="dashboard-detail">
+                                                    <h6 class="text-content">Default Shipping Address</h6>
+                                                    <p class="text-content mb-1">You have not set a default shipping address.</p>
+                                                    <a href="javascript:void(0)" class="text--base" data-bs-toggle="modal" data-bs-target="#editProfile">Edit Address</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade show" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab">
+                            <div class="dashboard-order">
+                                <div class="title mb-3 mb-sm-4">
+                                    <h3>My Orders History</h3>
+                                </div>
+
+                                <div class="order-contain">
+                                    <div class="order-box dashboard-bg-box">
+                                        <div class="order-container">
+                                            <div class="order-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box">
+                                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                                </svg>
+                                            </div>
+
+                                            <div class="order-detail">
+                                                <h4>Delivere <span>Panding</span></h4>
+                                                <h6 class="text-content">Gouda parmesan caerphilly mozzarella cottage cheese cauliflower cheese taleggio gouda.</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-order-detail">
+                                            <a href="" class="order-image">
+                                                <img src="assets/images/thumb/product1.jpg" class="blur-up lazyload" alt="thumb">
+                                            </a>
+
+                                            <div class="order-wrap">
+                                                <a href="" class="mb-2">
+                                                    <h4>Fantasy Crunchy Choco Chip Cookies</h4>
+                                                </a>
+                                                <p class="text-content">Cheddar dolcelatte gouda. Macaroni cheese
+                                                    cheese strings feta halloumi cottage cheese jarlsberg cheese
+                                                    triangles say cheese.</p>
+                                                <ul class="product-size">
+                                                    <li>
+                                                        <div class="size-box">
+                                                            <h6 class="text-content fs--16px">Price : </h6>
+                                                            <h5>$20.68</h5>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="size-box">
+                                                            <h6 class="text-content fs--16px">Rate : </h6>
+                                                            <div class="product-rating ms-2">
+                                                                <ul class="rating">
+                                                                    <li>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill">
+                                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                                        </svg>
+                                                                    </li>
+                                                                    <li>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill">
+                                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                                        </svg>
+                                                                    </li>
+                                                                    <li>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill">
+                                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                                        </svg>
+                                                                    </li>
+                                                                    <li>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill">
+                                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                                        </svg>
+                                                                    </li>
+                                                                    <li>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                                        </svg>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="size-box">
+                                                            <h6 class="text-content fs--16px">Sold By : </h6>
+                                                            <h5>Fresho</h5>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="size-box">
+                                                            <h6 class="text-content fs--16px">Quantity : </h6>
+                                                            <h5>250 G</h5>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="dashboard-profile">
+                                <div class="title">
+                                    <h3 class="mb-3 mb-sm-4">My Profile</h3>
+                                </div>
+
+                                <div class="profile-detail dashboard-bg-box">
+                                    <div class="dashboard-title">
+                                        <h3>Profile Name</h3>
+                                    </div>
+                                    <div class="profile-name-detail">
+                                        <div class="d-sm-flex align-items-center d-block">
+                                            <h3>Vicki E. Pope</h3>
+                                            <div class="product-rating profile-rating">
+                                                <ul class="rating">
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill">
+                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                        </svg>
+                                                    </li>
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill">
+                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                        </svg>
+                                                    </li>
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill">
+                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                        </svg>
+                                                    </li>
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star fill">
+                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                        </svg>
+                                                    </li>
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                                        </svg>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a>
+                                    </div>
+
+                                    <div class="location-profile">
+                                        <ul>
+                                            <li>
+                                                <div class="location-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg>
+                                                    <h6>Downers Grove, IL</h6>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="location-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                                    </svg>
+                                                    <h6>vicki.pope@gmail.com</h6>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="location-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square">
+                                                        <polyline points="9 11 12 14 22 4"></polyline>
+                                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                                    </svg>
+                                                    <h6>Licensed for 2 years</h6>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="profile-description">
+                                        <p>Residences can be classified by and how they are connected to
+                                            neighbouring residences and land. Different types of housing tenure can
+                                            be used for the same physical type.</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-about dashboard-bg-box">
+                                    <div class="row">
+                                        <div class="col-xxl-7">
+                                            <div class="dashboard-title mb-3">
+                                                <h3>Profile About</h3>
+                                            </div>
+
+                                            <div class="table-responsive">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Gender :</td>
+                                                            <td>Female</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Birthday :</td>
+                                                            <td>21/05/1997</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Phone Number :</td>
+                                                            <td>
+                                                                <a href="javascript:void(0)"> +91 846 - 547 -
+                                                                    210</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Address :</td>
+                                                            <td>549 Sulphur Springs Road, Downers, IL</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="dashboard-title mb-3 mt-4">
+                                                <h3>Login Details</h3>
+                                            </div>
+
+                                            <div class="table-responsive">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Email :</td>
+                                                            <td>
+                                                                <span> vicki.pope@gmail.com</span>
+                                                                <a href="javascript:void(0)" class="ms-3 text--base" data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Password :</td>
+                                                            <td>
+                                                                <span> ●●●●●●</span>
+                                                                <a href="javascript:void(0)" class="ms-3 text--base" data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-5">
+                                            <div class="profile-image">
+                                                <img src="assets/images/thumb/dashboard-profile.png" class="img-fluid blur-up lazyload" alt="thumb">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade show" id="pills-security" role="tabpanel" aria-labelledby="pills-security-tab">
+                            <div class="dashboard-privacy">
+                                <div class="dashboard-bg-box">
+                                    <div class="dashboard-title mb-4">
+                                        <h3>Privacy</h3>
+                                    </div>
+
+                                    <div class="privacy-box">
+                                        <div class="d-flex align-items-start">
+                                            <h6>Allows others to see my profile</h6>
+                                            <div class="form-check form-switch switch-radio ms-auto">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="redio1">
+                                                <label class="form-check-label" for="redio1"></label>
+                                            </div>
+                                        </div>
+
+                                        <p class="text-content">all peoples will be able to see my profile</p>
+                                    </div>
+
+                                    <div class="privacy-box">
+                                        <div class="d-flex align-items-start">
+                                            <h6>who has save this profile only that people see my profile</h6>
+                                            <div class="form-check form-switch switch-radio ms-auto">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="redio2">
+                                                <label class="form-check-label" for="redio2"></label>
+                                            </div>
+                                        </div>
+
+                                        <p class="text-content">all peoples will not be able to see my profile</p>
+                                    </div>
+
+                                    <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Save
+                                        Changes</button>
+                                </div>
+
+                                <div class="dashboard-bg-box mt-4">
+                                    <div class="dashboard-title mb-4">
+                                        <h3>Account settings</h3>
+                                    </div>
+
+                                    <div class="privacy-box">
+                                        <div class="d-flex align-items-start">
+                                            <h6>Deleting Your Account Will Permanently</h6>
+                                            <div class="form-check form-switch switch-radio ms-auto">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="redio3">
+                                                <label class="form-check-label" for="redio3"></label>
+                                            </div>
+                                        </div>
+                                        <p class="text-content">Once your account is deleted, you will be logged out
+                                            and will be unable to log in back.</p>
+                                    </div>
+
+                                    <div class="privacy-box">
+                                        <div class="d-flex align-items-start">
+                                            <h6>Deleting Your Account Will Temporary</h6>
+                                            <div class="form-check form-switch switch-radio ms-auto">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="redio4">
+                                                <label class="form-check-label" for="redio4"></label>
+                                            </div>
+                                        </div>
+
+                                        <p class="text-content">Once your account is deleted, you will be logged out
+                                            and you will be create new account</p>
+                                    </div>
+
+                                    <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Delete My Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade theme-modal" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Edit Profile</h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-xxl-12">
+                        <form>
+                            <div class="form-floating theme-form-floating">
+                                <input type="text" class="form-control form--control" id="pname" value="Jack Jennas">
+                                <label for="pname">Full Name</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-xxl-6">
+                        <form>
+                            <div class="form-floating theme-form-floating">
+                                <input type="email" class="form-control form--control" id="email1" value="vicki.pope@gmail.com">
+                                <label for="email1">Email address</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-xxl-6">
+                        <form>
+                            <div class="form-floating theme-form-floating">
+                                <input class="form-control form--control" type="tel" value="4567891234" name="mobile" id="mobile" maxlength="10">
+                                <label for="mobile">Email address</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-12">
+                        <form>
+                            <div class="form-floating theme-form-floating">
+                                <input type="text" class="form-control form--control" id="address1" value="8424 James Lane South San Francisco">
+                                <label for="address1">Add Address</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-12">
+                        <form>
+                            <div class="form-floating theme-form-floating">
+                                <input type="text" class="form-control form--control" id="address2" value="CA 94080">
+                                <label for="address2">Add Address 2</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-xxl-4">
+                        <form>
+                            <div class="form-floating theme-form-floating">
+                                <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
+                                    <option selected="">Choose Your Country</option>
+                                    <option value="kindom">United Kingdom</option>
+                                    <option value="states">United States</option>
+                                    <option value="fra">France</option>
+                                    <option value="china">China</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="turkey">Turkey</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="russian">Russian Federation</option>
+                                    <option value="malay">Malaysia</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="austria">Austria</option>
+                                    <option value="hong">Hong Kong SAR, China</option>
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="thailand">Thailand</option>
+                                    <option value="saudi">Saudi Arabia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="singa">Singapore</option>
+                                </select>
+                                <label for="floatingSelect">Country</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-xxl-4">
+                        <form>
+                            <div class="form-floating theme-form-floating">
+                                <select class="form-select" id="floatingSelect">
+                                    <option selected="">Choose Your City</option>
+                                    <option value="kindom">India</option>
+                                    <option value="states">Canada</option>
+                                    <option value="fra">Dubai</option>
+                                    <option value="china">Los Angeles</option>
+                                    <option value="spain">Thailand</option>
+                                </select>
+                                <label for="floatingSelect">City</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-xxl-4">
+                        <form>
+                            <div class="form-floating theme-form-floating">
+                                <input type="text" class="form-control form--control" id="address3" value="94080">
+                                <label for="address3">Pin Code</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn--danger btn--md" data-bs-dismiss="modal">Close</button>
+                <button type="button" data-bs-dismiss="modal" class="btn btn--base btn--md">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

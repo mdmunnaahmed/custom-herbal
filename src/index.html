@@ -70,10 +70,10 @@
                             <a class="menu-link" href="conditions.html">Terms & Conditions</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="sign-in.html">Sign In</a>
+                            <a class="menu-link" data-bs-toggle="modal" data-bs-target="#loginModal" href="javascript:void(0)">Sign In</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="sign-up.html">Sign Up</a>
+                            <a class="menu-link" data-bs-toggle="modal" data-bs-target="#registerModal" href="javascript:void(0)">Sign Up</a>
                         </li>
                     </ul>
                 </li>
@@ -82,9 +82,9 @@
                 </li>
             </ul>
             <div class="flex-wrap gap-3 d-none d-sm-flex">
-                <a href="login.html" class="text--base"><i class="fas la-sign-in-alt fs--15px"></i> Login</a>
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginModal" class="text--base"><i class="fas la-sign-in-alt fs--15px"></i> Login</a>
                 <span>/</span>
-                <a href="register.html"><i class="fas fa-user-edit fs--15px"></i> Register</a>
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#registerModal"><i class="fas fa-user-edit fs--15px"></i> Register</a>
             </div>
             <div class="header-trigger-wrapper">
                 <div class="header-trigger"><span></span></div>
@@ -149,13 +149,12 @@
                 <div class="product-item">
                     <div class="product-item__thumb">
                         <img src="assets/images/thumb/product3.jpg" alt="thumb" class="w-100">
-                        <span class="discount-price product-price">$89</span>
-                        <span class="original-price product-price">$129</span>
+                        <span class="featured product-status"><i class="las la-bolt"></i> Featured</span>
                     </div>
                     <div class="product-item__content">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <span class="fw-semibold">Stock available : <span class="text--base">129</span></span>
-                            <span class="fw-semibold">Sold : <span class="text--danger">170</span></span>
+                            <span class="original-price product-price">$129</span>
+                            <span class="discount-price product-price">$89</span>
                         </div>
                         <h4 class="product-item__content-title"><a href="product-details.html">New Badge Product</a></h4>
                     </div>
@@ -165,15 +164,14 @@
                 <div class="product-item">
                     <div class="product-item__thumb">
                         <img src="assets/images/thumb/product2.jpg" alt="thumb" class="w-100">
-                        <span class="discount-price product-price">$89</span>
-                        <span class="original-price product-price">$129</span>
+                        <span class="featured product-status"><i class="las la-bolt"></i> Featured</span>
                     </div>
                     <div class="product-item__content">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <span class="fw-semibold">Stock available : <span class="text--base">129</span></span>
-                            <span class="fw-semibold">Sold : <span class="text--danger">170</span></span>
+                            <span class="original-price product-price">$129</span>
+                            <span class="discount-price product-price">$89</span>
                         </div>
-                        <h4 class="product-item__content-title"><a href="product-details.html">Aliexpress dropshipping by Us</a></h4>
+                        <h4 class="product-item__content-title"><a href="product-details.html">Aliexpress dropshipping</a></h4>
                     </div>
                 </div>
             </div>
@@ -181,13 +179,12 @@
                 <div class="product-item">
                     <div class="product-item__thumb">
                         <img src="assets/images/thumb/product6.jpg" alt="thumb" class="w-100">
-                        <span class="discount-price product-price">$89</span>
-                        <span class="original-price product-price">$129</span>
+                        <span class="featured product-status"><i class="las la-bolt"></i> Featured</span>
                     </div>
                     <div class="product-item__content">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <span class="fw-semibold">Stock available : <span class="text--base">129</span></span>
-                            <span class="fw-semibold">Sold : <span class="text--danger">170</span></span>
+                            <span class="original-price product-price">$129</span>
+                            <span class="discount-price product-price">$89</span>
                         </div>
                         <h4 class="product-item__content-title"><a href="product-details.html">Classic Black Hair Oil</a></h4>
                     </div>
@@ -197,29 +194,27 @@
                 <div class="product-item">
                     <div class="product-item__thumb">
                         <img src="assets/images/thumb/product4.jpg" alt="thumb" class="w-100">
-                        <span class="discount-price product-price">$89</span>
-                        <span class="original-price product-price">$129</span>
+                        <span class="featured product-status"><i class="las la-bolt"></i> Featured</span>
                     </div>
                     <div class="product-item__content">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <span class="fw-semibold">Stock available : <span class="text--base">129</span></span>
-                            <span class="fw-semibold">Sold : <span class="text--danger">170</span></span>
+                            <span class="discount-price product-price">$89</span>
+                            <span class="original-price product-price">$129</span>
                         </div>
-                        <h4 class="product-item__content-title"><a href="product-details.html">Royal Green Massage Product</a></h4>
+                        <h4 class="product-item__content-title"><a href="product-details.html">Green Massage Product</a></h4>
                     </div>
                 </div>
             </div>
             <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-10">
                 <div class="product-item">
                     <div class="product-item__thumb">
-                        <img src="assets/images/thumb/product1.jpg" alt="thumb" class="w-100">
-                        <span class="discount-price product-price">$89</span>
-                        <span class="original-price product-price">$129</span>
+                        <img src="assets/images/thumb/product7.jpg" alt="thumb" class="w-100">
+                        <span class="featured product-status"><i class="las la-bolt"></i> Featured</span>
                     </div>
                     <div class="product-item__content">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <span class="fw-semibold">Stock available : <span class="text--base">129</span></span>
-                            <span class="fw-semibold">Sold : <span class="text--danger">170</span></span>
+                            <span class="original-price product-price">$129</span>
+                            <span class="discount-price product-price">$89</span>
                         </div>
                         <h4 class="product-item__content-title"><a href="product-details.html">New Badge Product</a></h4>
                     </div>
@@ -228,30 +223,28 @@
             <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-10">
                 <div class="product-item">
                     <div class="product-item__thumb">
-                        <img src="assets/images/thumb/product7.jpg" alt="thumb" class="w-100">
-                        <span class="discount-price product-price">$89</span>
-                        <span class="original-price product-price">$129</span>
+                        <img src="assets/images/thumb/product8.jpg" alt="thumb" class="w-100">
+                        <span class="featured product-status"><i class="las la-bolt"></i> Featured</span>
                     </div>
                     <div class="product-item__content">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <span class="fw-semibold">Stock available : <span class="text--base">129</span></span>
-                            <span class="fw-semibold">Sold : <span class="text--danger">170</span></span>
+                            <span class="original-price product-price">$129</span>
+                            <span class="discount-price product-price">$89</span>
                         </div>
-                        <h4 class="product-item__content-title"><a href="product-details.html">Aliexpress dropshipping by Us</a></h4>
+                        <h4 class="product-item__content-title"><a href="product-details.html">Aliexpress dropshipping</a></h4>
                     </div>
                 </div>
             </div>
             <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-10">
                 <div class="product-item">
                     <div class="product-item__thumb">
-                        <img src="assets/images/thumb/product8.jpg" alt="thumb" class="w-100">
-                        <span class="discount-price product-price">$89</span>
-                        <span class="original-price product-price">$129</span>
+                        <img src="assets/images/thumb/product9.jpg" alt="thumb" class="w-100">
+                        <span class="featured product-status"><i class="las la-bolt"></i> Featured</span>
                     </div>
                     <div class="product-item__content">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <span class="fw-semibold">Stock available : <span class="text--base">129</span></span>
-                            <span class="fw-semibold">Sold : <span class="text--danger">170</span></span>
+                            <span class="original-price product-price">$129</span>
+                            <span class="discount-price product-price">$89</span>
                         </div>
                         <h4 class="product-item__content-title"><a href="product-details.html">Classic Black Hair Oil</a></h4>
                     </div>
@@ -260,16 +253,15 @@
             <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-10">
                 <div class="product-item">
                     <div class="product-item__thumb">
-                        <img src="assets/images/thumb/product5.jpg" alt="thumb" class="w-100">
-                        <span class="discount-price product-price">$89</span>
-                        <span class="original-price product-price">$129</span>
+                        <img src="assets/images/thumb/product10.jpg" alt="thumb" class="w-100">
+                        <span class="featured product-status"><i class="las la-bolt"></i> Featured</span>
                     </div>
                     <div class="product-item__content">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <span class="fw-semibold">Stock available : <span class="text--base">129</span></span>
-                            <span class="fw-semibold">Sold : <span class="text--danger">170</span></span>
+                            <span class="discount-price product-price">$89</span>
+                            <span class="original-price product-price">$129</span>
                         </div>
-                        <h4 class="product-item__content-title"><a href="product-details.html">Royal Green Massage Product</a></h4>
+                        <h4 class="product-item__content-title"><a href="product-details.html">Green Massage Product</a></h4>
                     </div>
                 </div>
             </div>
@@ -381,7 +373,7 @@
                         <img src="assets/images/thumb/outlet1.jpg" alt="thumb" class="mw-100">
                     </div>
                     <div class="outlet-item__content">
-                        <h4 class="outlet-item__content-title">New Delhi</h4>
+                        <h4 class="outlet-item__content-title">Rajshai</h4>
                     </div>
                 </div>
             </div>
@@ -403,7 +395,7 @@
                         <img src="assets/images/thumb/outlet3.jpg" alt="thumb" class="mw-100">
                     </div>
                     <div class="outlet-item__content">
-                        <h4 class="outlet-item__content-title">New York</h4>
+                        <h4 class="outlet-item__content-title">Shylet</h4>
                     </div>
                 </div>
             </div>
@@ -578,6 +570,53 @@
 
 <!-- Footer Section -->
 <footer class="footer-section">
+    <!-- Delivery Section -->
+    <div class="pt-60">
+        <div class="container">
+            <div class="service-contain">
+                <div class="service-box">
+                    <div class="service-image">
+                        <img src="assets/images/icon/product.svg" alt="icon">
+                    </div>
+
+                    <div class="service-detail">
+                        <h6>Every Fresh Products</h6>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-image">
+                        <img src="assets/images/icon/delivery.svg" alt="icon">
+                    </div>
+
+                    <div class="service-detail">
+                        <h6>Free Delivery For Order Over $50</h6>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-image">
+                        <img src="assets/images/icon/discount.svg" alt="icon">
+                    </div>
+
+                    <div class="service-detail">
+                        <h6>Daily Mega Discounts</h6>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-image">
+                        <img src="assets/images/icon/market.svg" alt="icon">
+                    </div>
+
+                    <div class="service-detail">
+                        <h6>Best Price On The Market</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delivery Section -->
     <img src="assets/images/bg/bg2.jpg" alt="" class="footer-bg">
     <img src="assets/images/bg/bg2.png" alt="" class="footer-bg bg-two">
     <div class="footer-top pt-60">
@@ -647,6 +686,148 @@
     </div>
 </footer>
 <!-- Footer Section -->
+<!-- Login Modal -->
+<div class="modal" tabindex="-1" id="loginModal">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content p-0">
+            <div class="modal-body p-0 p-lg-2 ">
+                <div class="card rounded-0 border-0 overflow-hidden">
+                    <div class="row g-0">
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <img src="assets/images/thumb/outlet2.jpg" alt="login-thumb" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5">
+                                <div class="modal-close" data-bs-dismiss="modal"><i class="las la-times"></i></div>
+                                <form class="account-form">
+
+                                    <a href="index.html" class="logo mb-4"><img src="assets/images/logo.png" alt="logo"></a>
+
+                                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+
+                                    <div class="form-group mb-4">
+                                        <input type="text" id="email01" class="form-control form--control" required>
+                                        <label class="form-label" for="email01">Email address</label>
+                                    </div>
+
+                                    <div class="form-group mb-4">
+                                        <input type="password" id="pass01" class="form-control form--control" required>
+                                        <label class="form-label" for="pass01">Password</label>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <button class="btn btn--base" type="button">Login</button>
+                                    </div>
+
+                                    <a class="small text-muted text--base" href="#!">Forgot password?</a>
+                                    <p class="mb-4 pb-lg-2">Don't have an account ? <a class="text--base" data-bs-toggle="modal" data-bs-target="#registerModal" href="javascript:void(0)">Register Here</a></p>
+
+                                    <a href="" class="small text-muted">Terms of use.</a>
+                                    <a href="" class="small text-muted">Privacy policy</a>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login Modal -->
+
+<!-- Login Modal -->
+<div class="modal" tabindex="-1" id="registerModal">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content p-0">
+            <div class="modal-body p-0 p-lg-2 ">
+                <div class="card rounded-0 border-0 overflow-hidden">
+                    <div class="row g-0">
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <img src="assets/images/thumb/outlet2.jpg" alt="login-thumb" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5">
+                                <div class="modal-close" data-bs-dismiss="modal"><i class="las la-times"></i></div>
+                                <a href="index.html" class="logo mb-4"><img src="assets/images/logo.png" alt="logo"></a>
+                                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                                <form class="account-form">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                            <div class="form-group mb-4">
+                                                <input type="text" id="fname" class="form-control form--control" required>
+                                                <label class="form-label" for="fname">First Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                            <div class="form-group mb-4">
+                                                <input type="text" id="lname" class="form-control form--control" required>
+                                                <label class="form-label" for="lname">Last Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                            <div class="form-group mb-4">
+                                                <input type="text" id="fname" class="form-control form--control" required>
+                                                <label class="form-label" for="fname">Username</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                            <div class="form-group mb-4">
+                                                <input type="text" id="lname" class="form-control form--control" required>
+                                                <label class="form-label" for="lname">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                            <div class="form-group mb-4">
+                                                <input type="text" id="fname" class="form-control form--control" required value="+81 17 234 819">
+                                                <label class="form-label" for="fname">Phone</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                            <div class="form-group mb-4">
+                                                <select class="form-select form--control">
+                                                    <option value="">Country</option>
+                                                    <option value="">Bangladesh</option>
+                                                    <option value="">Pakistan</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                            <div class="form-group mb-4">
+                                                <input type="password" id="pass01" class="form-control form--control" required>
+                                                <label class="form-label" for="pass01">Password</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                            <div class="form-group mb-4">
+                                                <input type="password" id="pass01" class="form-control form--control" required>
+                                                <label class="form-label" for="pass01">Re-type Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <button class="btn btn--base" type="button">Register</button>
+                                    </div>
+
+                                    <p class="mb-3">Already have an account ? <a class="text--base" data-bs-toggle="modal" data-bs-target="#loginModal" href="javascript:void(0)">Login Here</a></p>
+
+                                    <a href="" class="small text-muted">Terms of use.</a>
+                                    <a href="" class="small text-muted">Privacy policy</a>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login Modal -->
+
+
+
 <!-- jQuery library -->
 <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
 
@@ -656,7 +837,7 @@
 <!-- Pluglin Link -->
 <script src="assets/js/lib/slick.min.js"></script>
 <script src="assets/js/lib/magnific-popup.min.js"></script>
-<script src="assets/js/lib/wow.min.js"></script>
+<script src="assets/js/lib/easyzoom.js"></script>
 
 <!-- Main js -->
 <script src="assets/js/main.js"></script>
